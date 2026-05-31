@@ -12,6 +12,7 @@ fetch(csvUrl)
     rows.slice(1).forEach(row => {
 
       const cols = row.split(',');
+      console.log(cols);
 
       html += `
   <div>
