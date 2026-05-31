@@ -14,12 +14,16 @@ fetch(csvUrl)
       const cols = row.split(',');
 
       html += `
-        <div>
-          <h3>${cols[1]} ${cols[2]} ${cols[3]}</h3>
-          <p>Price: $${cols[4]}</p>
-          <p>Miles: ${cols[5]}</p>
-        </div>
-      `;
+  <div>
+    <img src="${cols[7]}" width="300">
+
+    <h3>${cols[1]} ${cols[2]} ${cols[3]}</h3>
+
+    <p>Price: $${cols[4]}</p>
+
+    <p>Miles: ${cols[5]}</p>
+  </div>
+`;
     });
 
     document.getElementById('inventory').innerHTML = html;
