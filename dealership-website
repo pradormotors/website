@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prado R Motors</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Prado R Motors</h1>
+
+<p>Quality Used Cars in McAllen, TX</p>
+
+<h2>Featured Vehicles</h2>
+
+<div id="inventory"></div>
+
+<p>
+Call: +1 (956) 278-5472
+</p>
+
+<p>
+Email: pradormotors@gmail.com
+</p>
+
+</body>
+</html>
