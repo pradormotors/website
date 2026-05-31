@@ -14,11 +14,12 @@ fetch(csvUrl)
       const cols = row.split(',');
       console.log(cols);
 
+      const photo = cols[7].trim();
+      
       html += `
   <div>
 
     <p>DEBUG PHOTO: [${cols[7]}]</p>
-    const photo = cols[7].trim();
     <img
   class="vehicle-photo"
   src="${photo}"
