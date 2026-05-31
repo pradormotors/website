@@ -20,8 +20,6 @@ fetch(csvUrl)
       
       html += `
   <div>
-
-    <p>DEBUG PHOTO: [${cols[7]}]</p>
     <img
   class="vehicle-photo"
   src="${photo}"
