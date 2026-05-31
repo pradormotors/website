@@ -16,17 +16,21 @@ fetch(csvUrl)
 
       html += `
   <div>
+
+    <p>DEBUG PHOTO: [${cols[7]}]</p>
+
     <img
-  class="vehicle-photo"
-  src="${cols[7]}"
-  alt="${cols[1]} ${cols[2]} ${cols[3]}"
-  >
+      class="vehicle-photo"
+      src="${cols[7]}"
+      alt="${cols[1]} ${cols[2]} ${cols[3]}"
+    >
 
     <h3>${cols[1]} ${cols[2]} ${cols[3]}</h3>
 
     <p>Price: $${cols[4]}</p>
 
     <p>Miles: ${cols[5]}</p>
+
   </div>
 `;
     });
