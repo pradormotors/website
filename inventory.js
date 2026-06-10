@@ -32,17 +32,19 @@ if (status === "sold") {
       html += `
 <div class="vehicle-card">
 
-  <img
-    class="vehicle-photo"
-    src="${photo}"
-    alt="${cols[1]} ${cols[2]} ${cols[3]}"
-  >
-
-  <div class="vehicle-info">
+  <div class="vehicle-image-wrapper">
+    <img
+      class="vehicle-photo"
+      src="${photo}"
+      alt="${cols[1]} ${cols[2]} ${cols[3]}"
+    >
 
     <span class="badge ${badgeClass}">
       ${cols[6]}
     </span>
+  </div>
+
+  <div class="vehicle-info">
 
     <h3 class="vehicle-title">
       ${cols[1]} ${cols[2]} ${cols[3]}
