@@ -16,7 +16,30 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
 
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header p {
+  margin: 5px 0 0;
+  color: #ddd;
+}
+
+.header-contact {
+  text-align: right;
+}
 .vehicle-image-wrapper {
   position: relative;
   background-color: #f4f4f4;
@@ -87,9 +110,17 @@ body {
 <script src="inventory.js"></script>
 <body>
 
-<h1>Prado R Motors</h1>
+<header class="site-header">
+  <div>
+    <h1>Prado R Motors</h1>
+    <p>Quality Used Cars in McAllen, TX</p>
+  </div>
 
-<p>Quality Used Cars in McAllen, TX</p>
+  <div class="header-contact">
+    <strong>Call: +1 (956) 278-5472</strong><br>
+    <span>pradormotors@gmail.com</span>
+  </div>
+</header>
 
 <h2>Featured Vehicles</h2>
 
