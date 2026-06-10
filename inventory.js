@@ -46,6 +46,10 @@ if (status === "sold") {
 
   <div class="vehicle-info">
 
+    <p class="vehicle-stock">
+      Stock #${cols[0]}
+    </p>
+
     <h3 class="vehicle-title">
       ${cols[1]} ${cols[2]} ${cols[3]}
     </h3>
@@ -57,6 +61,14 @@ if (status === "sold") {
     <p class="vehicle-miles">
       ${Number(cols[5]).toLocaleString()} miles
     </p>
+
+    <span class="finance-badge">
+      Financing Available
+    </span>
+
+    <div class="view-button">
+      View Details
+    </div>
 
   </div>
 
