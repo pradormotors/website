@@ -17,6 +17,17 @@ fetch(csvUrl)
       console.log(cols);
 
       const photo = cols[7].trim();
+      const status = cols[6].trim().toLowerCase();
+
+let badgeClass = "available";
+
+if (status === "pending") {
+  badgeClass = "pending";
+}
+
+if (status === "sold") {
+  badgeClass = "sold";
+}
       
       html += `
 <div class="vehicle-card">
@@ -28,6 +39,10 @@ fetch(csvUrl)
   >
 
   <div class="vehicle-info">
+
+    <span class="badge ${badgeClass}">
+      ${cols[6]}
+    </span>
 
     <h3 class="vehicle-title">
       ${cols[1]} ${cols[2]} ${cols[3]}
