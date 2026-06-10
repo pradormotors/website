@@ -30,7 +30,8 @@ if (status === "sold") {
 }
       
       html += `
-<div class="vehicle-card">
+
+<a class="vehicle-card" href="vehicle.html?stock=${cols[0]}">
 
   <div class="vehicle-image-wrapper">
     <img
@@ -72,7 +73,7 @@ if (status === "sold") {
 
   </div>
 
-</div>
+</a>
 `;
     });
 
