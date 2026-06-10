@@ -19,20 +19,31 @@ fetch(csvUrl)
       const photo = cols[7].trim();
       
       html += `
-  <div>
-    <img
-  class="vehicle-photo"
-  src="${photo}"
-  alt="${cols[1]} ${cols[2]} ${cols[3]}"
->
+<div class="vehicle-card">
 
-    <h3>${cols[1]} ${cols[2]} ${cols[3]}</h3>
+  <img
+    class="vehicle-photo"
+    src="${photo}"
+    alt="${cols[1]} ${cols[2]} ${cols[3]}"
+  >
 
-    <p>Price: $${cols[4]}</p>
+  <div class="vehicle-info">
 
-    <p>Miles: ${cols[5]}</p>
+    <h3 class="vehicle-title">
+      ${cols[1]} ${cols[2]} ${cols[3]}
+    </h3>
+
+    <div class="vehicle-price">
+      $${Number(cols[4]).toLocaleString()}
+    </div>
+
+    <p class="vehicle-miles">
+      ${Number(cols[5]).toLocaleString()} miles
+    </p>
 
   </div>
+
+</div>
 `;
     });
 
