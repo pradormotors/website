@@ -70,3 +70,10 @@ fetch(csvUrl)
       </div>
     `;
   });
+
+  .catch(error => {
+    document.getElementById('vehicle-detail').innerHTML = `
+      <h1>Error Loading Vehicle</h1>
+      <p>${error}</p>
+    `;
+  });
