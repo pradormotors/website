@@ -11,29 +11,12 @@ body {
   padding: 20px;
   min-height: 100vh;
 
-  background-color: #050505;
-  background-image:
-    radial-gradient(circle at top center, rgba(255, 196, 0, 0.22), transparent 28%),
-    radial-gradient(circle at bottom center, rgba(255, 196, 0, 0.12), transparent 35%),
-    linear-gradient(120deg, transparent 0%, transparent 44%, rgba(255, 196, 0, 0.22) 45%, transparent 46%, transparent 100%),
-    linear-gradient(60deg, rgba(255, 196, 0, 0.08) 25%, transparent 25%, transparent 75%, rgba(255, 196, 0, 0.08) 75%),
-    linear-gradient(120deg, rgba(255, 196, 0, 0.08) 25%, transparent 25%, transparent 75%, rgba(255, 196, 0, 0.08) 75%);
-  background-size:
-    auto,
-    auto,
-    auto,
-    70px 120px,
-    70px 120px;
-  background-position:
-    center top,
-    center bottom,
-    center,
-    0 0,
-    35px 60px;
-
-  color: #111;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
+   
 #inventory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
