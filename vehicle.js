@@ -40,8 +40,19 @@ fetch(csvUrl)
     const status = selectedVehicle[6].trim();
     const photo = selectedVehicle[7].trim();
 
+    const badgeClass = status.toLowerCase();
+
     container.innerHTML = `
-      <h1>${year} ${make} ${model}</h1>
+      <div class="detail-header">
+        <div>
+          <h1>${year} ${make} ${model}</h1>
+          <div class="price">$${price}</div>
+        </div>
+
+        <span class="status-badge ${badgeClass}">
+          ${status}
+        </span>
+      </div>
 
       <div class="detail-layout">
 
@@ -50,27 +61,45 @@ fetch(csvUrl)
         </div>
 
         <div>
-          <div class="price">$${price}</div>
-
           <div class="info-box">
-            <p><strong>Stock #:</strong> ${stock}</p>
-            <p><strong>Mileage:</strong> ${mileage} miles</p>
-            <p><strong>Status:</strong> ${status}</p>
-            <p><strong>Financing:</strong> Available</p>
-          </div>
 
-          <a
-            class="contact-button"
-            href="tel:+19562785472"
-          >
-            Call Prado R Motors
-          </a>
+            <div class="spec-grid">
+              <div class="spec-item">
+                <div class="spec-label">Stock #</div>
+                <div class="spec-value">${stock}</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-label">Mileage</div>
+                <div class="spec-value">${mileage} miles</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-label">Financing</div>
+                <div class="spec-value">Available</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-label">Status</div>
+                <div class="spec-value">${status}</div>
+              </div>
+            </div>
+
+            <a class="contact-button" href="tel:+19562785472">
+              Call Prado R Motors
+            </a>
+
+          </div>
         </div>
 
       </div>
+
+      <div class="description-box">
+        <h2>Vehicle Description</h2>
+        <p>Contact Prado R Motors for more details about this vehicle.</p>
+      </div>
     `;
   })
-
   .catch(error => {
     document.getElementById('vehicle-detail').innerHTML = `
       <h1>Error Loading Vehicle</h1>
