@@ -71,7 +71,7 @@ fetch(csvUrl)
 
       </div>
     `;
-  });
+  })
 
   .catch(error => {
     document.getElementById('vehicle-detail').innerHTML = `
