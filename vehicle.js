@@ -49,10 +49,11 @@ fetch(csvUrl)
           <div class="price">$${price}</div>
         </div>
 
-        <span class="status-badge ${badgeClass}">
-          ${status}
-        </span>
-      </div>
+       <div class="status-container">
+  <span class="status-badge ${badgeClass}">
+    ${status}
+  </span>
+</div>
 
       <div class="detail-layout">
 
