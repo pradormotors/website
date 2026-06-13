@@ -64,11 +64,7 @@ fetch(csvUrl)
           <div class="info-box">
 
             <div class="spec-grid">
-              <div class="spec-item">
-                <div class="spec-label">Stock #</div>
-                <div class="spec-value">${stock}</div>
-              </div>
-
+            
               <div class="spec-item">
                 <div class="spec-label">Mileage</div>
                 <div class="spec-value">${mileage} miles</div>
