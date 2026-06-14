@@ -90,12 +90,6 @@ if (statusKey === "sold") {
                 <div class="spec-value">Available</div>
               </div>
 
-              <div class="spec-item">
-                <div class="spec-label">Status</div>
-                <div class="spec-value">${status}</div>
-              </div>
-            </div>
-
             <a class="contact-button" href="tel:+19562785472">
               Call Prado R Motors
             </a>
