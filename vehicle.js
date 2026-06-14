@@ -59,17 +59,21 @@ if (statusKey === "sold") {
           <div class="price">$${price}</div>
         </div>
 
-       <div class="status-container">
+      <div class="detail-layout">
+
+      <div class="photo-wrapper">
+
   <span class="status-badge ${badgeClass}">
     ${status}
   </span>
+
+  <img
+    class="main-photo"
+    src="${photo}"
+    alt="${year} ${make} ${model}"
+  >
+
 </div>
-
-      <div class="detail-layout">
-
-        <div>
-          <img class="main-photo" src="${photo}" alt="${year} ${make} ${model}">
-        </div>
 
         <div>
           <div class="info-box">
