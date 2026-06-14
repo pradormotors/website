@@ -39,7 +39,8 @@ fetch(csvUrl)
     const mileage = Number(selectedVehicle[5]).toLocaleString();
     const status = selectedVehicle[6].trim();
 const photo = selectedVehicle[7].trim();
-
+const titleStatus = selectedVehicle[8].trim();
+    
 let badgeClass = "available";
 
 const statusKey = status.toLowerCase();
@@ -89,6 +90,11 @@ if (statusKey === "sold") {
                 <div class="spec-label">Financing</div>
                 <div class="spec-value">Available</div>
               </div>
+
+              <div class="spec-item">
+  <div class="spec-label">Title</div>
+  <div class="spec-value">${titleStatus}</div>
+</div>
 
             <a class="contact-button" href="tel:+19562785472">
               Call Prado R Motors
