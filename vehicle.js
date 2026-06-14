@@ -38,9 +38,19 @@ fetch(csvUrl)
     const price = Number(selectedVehicle[4]).toLocaleString();
     const mileage = Number(selectedVehicle[5]).toLocaleString();
     const status = selectedVehicle[6].trim();
-    const photo = selectedVehicle[7].trim();
+const photo = selectedVehicle[7].trim();
 
-    const badgeClass = status.toLowerCase();
+let badgeClass = "available";
+
+const statusKey = status.toLowerCase();
+
+if (statusKey === "sale pending") {
+  badgeClass = "pending";
+}
+
+if (statusKey === "sold") {
+  badgeClass = "sold";
+}
 
     container.innerHTML = `
       <div class="detail-header">
