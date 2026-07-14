@@ -7,7 +7,6 @@ const csvUrl =
 */
 const vehicleExtras = {
   '1001': {
-    trim: 'SE',
     exteriorColor: 'Silver',
     interiorColor: 'Black',
     financingAvailable: true,
@@ -23,7 +22,6 @@ const vehicleExtras = {
   },
 
   '1002': {
-    trim: 'TSI SE 1.8T Sport',
     exteriorColor: 'White',
     interiorColor: 'Black / Gray',
     financingAvailable: true,
@@ -39,7 +37,6 @@ const vehicleExtras = {
   },
 
   '1003': {
-    trim: 'SE',
     exteriorColor: 'Blue',
     interiorColor: 'Black',
     financingAvailable: true,
@@ -239,6 +236,7 @@ fetch(csvUrl)
     const status = selectedVehicle[6]?.trim() || 'For Sale';
     const sheetPhoto = selectedVehicle[7]?.trim() || '';
     const titleStatus = selectedVehicle[8]?.trim() || 'Contact Dealer';
+    const trim = selectedVehicle[9]?.trim() || '';
 
     const extras = vehicleExtras[stock] || {
       trim: '',
@@ -250,7 +248,7 @@ fetch(csvUrl)
     };
 
     const photos = extras.photos?.length ? extras.photos : [sheetPhoto].filter(Boolean);
-    const fullModelName = [year, make, model, extras.trim].filter(Boolean).join(' ');
+    const fullModelName = [year, make, model, trim].filter(Boolean).join(' ');
     const statusClass = getStatusClass(status);
     const titleClass = getTitleClass(titleStatus);
 
