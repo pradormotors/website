@@ -14,8 +14,8 @@ fetch(csvUrl)
       const cols = row.split(',');
       console.log(cols);
 
-      const photo = cols[7].trim();
-      const status = cols[6].trim().toLowerCase();
+      const photo = cols[7]?.trim() || '';
+      const status = cols[6]?.trim().toLowerCase() || '';
       const trim = cols[9]?.trim() || '';
 
 let badgeClass = "available";
