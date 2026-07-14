@@ -16,6 +16,7 @@ fetch(csvUrl)
 
       const photo = cols[7].trim();
       const status = cols[6].trim().toLowerCase();
+      const trim = cols[9]?.trim() || '';
 
 let badgeClass = "available";
 
@@ -35,7 +36,7 @@ if (status === "sold") {
     <img
       class="vehicle-photo"
       src="${photo}"
-      alt="${cols[1]} ${cols[2]} ${cols[3]}"
+      alt="${cols[1]} ${cols[2]} ${cols[3]}${trim ? ` ${trim}` : ''}"
     >
 
     <span class="badge ${badgeClass}">
@@ -50,7 +51,7 @@ if (status === "sold") {
     </p>
 
     <h3 class="vehicle-title">
-      ${cols[1]} ${cols[2]} ${cols[3]}
+      ${cols[1]} ${cols[2]} ${cols[3]}${trim ? ` ${trim}` : ''}
     </h3>
 
     <div class="vehicle-price">
