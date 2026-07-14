@@ -11,7 +11,7 @@ const vehicleExtras = {
     exteriorColor: 'Silver',
     interiorColor: 'Black',
     financingAvailable: true,
-    photos: Array.from({ length: 11 }, (_, index) =>
+    photos: Array.from({ length: 10 }, (_, index) =>
       `photos/1001_${String(index + 1).padStart(3, '0')}.jpg`
     ),
     description: [
