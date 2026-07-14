@@ -1,5 +1,3 @@
-alert("COMING SOON: THIS IS A SAMPLE PAGE");
-
 const csvUrl =
 'https://docs.google.com/spreadsheets/d/e/2PACX-1vShNE87hHjBK353mmmUQQUCkoQ8CmPP56v5L-jjKrCtaBel3YtZKMVd0DU7KUsDhvXj6ckeapyKhrty/pub?output=csv';
 
@@ -21,7 +19,7 @@ fetch(csvUrl)
 
 let badgeClass = "available";
 
-if (status === "pending") {
+if (status === "pending" || status === "sale pending") {
   badgeClass = "pending";
 }
 
