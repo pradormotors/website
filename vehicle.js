@@ -49,6 +49,21 @@ const vehicleExtras = {
       'Give us a call at (956) 278-5472 for more information. We are an official dealership; taxes and fees apply. We do not charge additional dealer fees. Visit us at 22325 Engelman Gardens Rd, Monte Alto, Texas. Please call to confirm availability, as vehicles may sell before the online inventory is updated.',
       'We understand our location is outside city limits. You may call to schedule a viewing and test drive, and we can arrange to bring the requested vehicle to a nearby public location.'
     ]
+  },
+
+  '1004': {
+    exteriorColor: 'Blue',
+    interiorColor: 'Black',
+    financingAvailable: true,
+    photos: Array.from({ length: 15 }, (_, index) =>
+      `photos/1004_${String(index + 1).padStart(3, '0')}.jpg`
+    ),
+    description: [
+      'Prado R Motors presents this really clean 2015 Nissan Versa Note SL for sale for $6,900. It has a clean title, only approximately 86,409 miles, and is mechanically sound. It is the perfect gas-saving option for school, commuting, or simply as a great daily vehicle. Come test drive it!',
+      'Included features include cold A/C, touchscreen display, Bluetooth, rearview camera, steering-wheel controls, cruise control, alloy wheels, fog lights, and more.',
+      'Give us a call at (956) 278-5472 for more information. We are an official dealership; taxes and fees apply. We do not charge additional dealer fees. Visit us at 22325 Engelman Gardens Rd, Monte Alto, Texas. Please call to confirm availability, as vehicles may sell before the online inventory is updated.',
+      'We understand our location is outside city limits. You may call to schedule a viewing and test drive, and we can arrange to bring the requested vehicle to a nearby public location.'
+    ]
   }
 };
 
