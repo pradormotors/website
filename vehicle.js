@@ -64,7 +64,22 @@ const vehicleExtras = {
       'Give us a call at (956) 278-5472 for more information. We are an official dealership; taxes and fees apply. We do not charge additional dealer fees. Visit us at 22325 Engelman Gardens Rd, Monte Alto, Texas. Please call to confirm availability, as vehicles may sell before the online inventory is updated.',
       'We understand our location is outside city limits. You may call to schedule a viewing and test drive, and we can arrange to bring the requested vehicle to a nearby public location.'
     ]
-  }
+  },
+  
+  '1005': {
+  exteriorColor: 'Orange',
+  interiorColor: 'Gray / Beige',
+  financingAvailable: true,
+  photos: Array.from({ length: 16 }, (_, index) =>
+    `photos/1005_${String(index + 1).padStart(3, '0')}.jpg`
+  ),
+  description: [
+    'Prado R Motors presents this clean 2015 Ford Escape SE for sale for $9,300. It has a clean title, approximately 76,684 miles, and is in great condition. This comfortable and practical SUV offers plenty of passenger and cargo space while remaining a great option for commuting, school, work, or everyday driving. Come test drive it!',
+    'Included features include cold dual-zone A/C, touchscreen display, Bluetooth, navigation, rearview camera, rear parking sensors, power driver\'s seat, steering-wheel controls, cruise control, roof rails, and more.',
+    'Give us a call at (956) 278-5472 for more information. We are an official dealership; taxes and fees apply. We do not charge additional dealer fees. Visit us at 22325 Engelman Gardens Rd, Monte Alto, Texas. Please call to confirm availability, as vehicles may sell before the online inventory is updated.',
+    'We understand our location is outside city limits. You may call to schedule a viewing and test drive, and we can arrange to bring the requested vehicle to a nearby public location.'
+  ]
+}
 };
 
 const params = new URLSearchParams(window.location.search);
